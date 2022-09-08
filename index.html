@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <script src="multi_function.js"></script>
+ 
+        <style>
+            td{
+                padding-left: 20px;
+                padding-right: 20px;
+                height: 40px;
+                width: 150px;
+                text-align: center;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm-4"><b>Enter value:</b></div>
+            <div class="col-sm-8">
+                <input type="text" id="value__" name="number" style="height: 30px;width: 20%;">
+                <span id="validation_error" style="color: rgb(247, 131, 6)"></span>
+            </div></div>
+        
+       
+            
+        <table class="table" border="1">
+
+                <tr>
+                    <td style="background-color: lightsteelblue;">Select</td>
+                    <td style="color: rgb(97, 97, 249);">Prime Number</td>
+                    <td style="color: rgb(240, 111, 18);">Reverse the Number</td>
+                    <td style="color: rgb(135, 17, 135);">Armstrong Number</td>
+                    <td style="color: rgb(16, 195, 16);">Adding Digits</td>
+                    <td style="color: rgb(235, 26, 176);">Factorial of Number</td>
+                    <td style="color: rgb(4, 124, 130);">Palindrom Number</td>
+                </tr>
+
+                <tr>
+                    <td><strong>No argument no return Value</strong></td>
+                    <td><input type="radio" name="ab" id="a1"></td>
+                    <td><input type="radio" name="ab" id="a2"></td>
+                    <td><input type="radio" name="ab" id="a3"></td>
+                    <td><input type="radio" name="ab" id="a4"></td>
+                    <td><input type="radio" name="ab" id="a5"></td>
+                    <td><input type="radio" name="ab" id="a6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>With argument no return Value</strong></td>
+                    <td><input type="radio" name="ab" id="b1"></td>
+                    <td><input type="radio" name="ab" id="b2"></td>
+                    <td><input type="radio" name="ab" id="b3"></td>
+                    <td><input type="radio" name="ab" id="b4"></td>
+                    <td><input type="radio" name="ab" id="b5"></td>
+                    <td><input type="radio" name="ab" id="b6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>With argument with return value</strong></td>
+                    <td><input type="radio" name="ab" id="c1"></td>
+                    <td><input type="radio" name="ab" id="c2"></td>
+                    <td><input type="radio" name="ab" id="c3"></td>
+                    <td><input type="radio" name="ab" id="c4"></td>
+                    <td><input type="radio" name="ab" id="c5"></td>
+                    <td><input type="radio" name="ab" id="c6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>No argument with return value</strong></td>
+                    <td><input type="radio" name="ab" id="d1"></td>
+                    <td><input type="radio" name="ab" id="d2"></td>
+                    <td><input type="radio" name="ab" id="d3"></td>
+                    <td><input type="radio" name="ab" id="d4"></td>
+                    <td><input type="radio" name="ab" id="d5"></td>
+                    <td><input type="radio" name="ab" id="d6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>function expression</strong></td>
+                    <td><input type="radio" name="ab" id="e1"></td>
+                    <td><input type="radio" name="ab" id="e2"></td>
+                    <td><input type="radio" name="ab" id="e3"></td>
+                    <td><input type="radio" name="ab" id="e4"></td>
+                    <td><input type="radio" name="ab" id="e5"></td>
+                    <td><input type="radio" name="ab" id="e6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Callback function</strong></td>
+                    <td><input type="radio" name="ab" id="f1"></td>
+                    <td><input type="radio" name="ab" id="f2"></td>
+                    <td><input type="radio" name="ab" id="f3"></td>
+                    <td><input type="radio" name="ab" id="f4"></td>
+                    <td><input type="radio" name="ab" id="f5"></td>
+                    <td><input type="radio" name="ab" id="f6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Arrow function</strong></td>
+                    <td><input type="radio" name="ab" id="g1"></td>
+                    <td><input type="radio" name="ab" id="g2"></td>
+                    <td><input type="radio" name="ab" id="g3"></td>
+                    <td><input type="radio" name="ab" id="g4"></td>
+                    <td><input type="radio" name="ab" id="g5"></td>
+                    <td><input type="radio" name="ab" id="g6"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Promise function</strong></td>
+                    <td><input type="radio" name="ab" id="h1"></td>
+                    <td><input type="radio" name="ab" id="h2"></td>
+                    <td><input type="radio" name="ab" id="h3"></td>
+                    <td><input type="radio" name="ab" id="h4"></td>
+                    <td><input type="radio" name="ab" id="h5"></td>
+                    <td><input type="radio" name="ab" id="h6"></td>
+                </tr>
+
+            </table>
+       
+          
+          <div class="row">  
+            <div class="col-md-1"><b>Result:  </b></div>
+            <div class="col-md-2">
+                <button type="button" onclick="prime(),prime_2(),prime_3(),prime_4(),prime_Expression(),prime_callback(),prime_arrow(),prime_Promise(),
+                Reverse(),Reverse_2(),Reverse_3(),Reverse_4(),Reverse_Expression(),Reverse_Callback(),Reverse_Arrow(),Reverse_Promise(),
+                Armstrong(),Armstrong_2(),Armstrong_3(),Armstrong_4(),Armstrong_Expression(),Armstrong_Callback(),Armstrong_Arrow(),Armstrong_Promise(),
+                Add_Digit(),Add_Digit_2(),Add_Digit_3(),Add_Digit_4(),Add_Digit_Expression(),Add_Digit_Callback(),Add_Digit_Arrow(),Add_Digit_Promise(),
+                Factorial(),Factorial_2(),Factorial_3(),Factorial_4(),Factorial_Expression(),Factorial_Callback(),Factorial_Arrow(),Factorial_Promise(),
+                Palindrom(),Palindrom_2(),Palindrom_3(),Palindrom_4(),Palindrom_Expression(),Palindrom_Callback(),Palindrom_Arrow(),Palindrom_Promise()" style="background-color: lightskyblue;width: 110px;height: 30px;">click</button>
+            <span id="function_type" style="color: red"></span>
+            </div>
+            <div class="col-md-3">  <input type="text" id="result" style="height: 30px;width: 20%;"></div>
+            </div></div>
+           
+          
+        
+    </body>
+</html>
